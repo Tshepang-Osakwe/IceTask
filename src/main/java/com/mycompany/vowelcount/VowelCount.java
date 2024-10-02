@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.vowelcount;
-
+import java.util.Scanner;
 /**
  *
  * @author RC_Student_lab
@@ -31,7 +31,9 @@ public class VowelCount {
     }
     // Main method to test the countVowels method
     public static void main(String[] args) {
-        String sentence = "Hello, how many vowels are in this sentence?";
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a sentence: ");
+        String sentence = scanner.nextLine();
         System.out.println("Number of vowels: " + countVowels(sentence));
     }
 }
